@@ -1,0 +1,1 @@
+/cluster/home/danglada/miniconda3/envs/radcure-challenge/bin/python: Error while finding module specification for 'attention_model.train' (ModuleNotFoundError: No module named 'attention_model')

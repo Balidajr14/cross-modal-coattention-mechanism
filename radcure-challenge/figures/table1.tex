@@ -1,0 +1,11 @@
+\begin{tabular}{rllll}
+\toprule
+ rank &                                                                                                                                                          description &                AUROC &                   AP &              C-index \\
+\midrule
+    1 &                   Co-Attention Mechanism over features extracted from CT Imaging (wiht a basic ConvNet) and EMR Data (with embedding codification). Final MTLR head. & 0.809 [0.763--0.851] & 0.441 [0.360--0.535] & 0.796 [0.754--0.834] \\
+    2 &                     Co-Attention Mechanism over features extracted from CT Imaging (wiht a 3D DenseNet) and EMR Data (with embedding codification). Final MTLR head. & 0.782 [0.734--0.827] & 0.411 [0.334--0.498] & 0.769 [0.726--0.810] \\
+    3 &                                           3D DenseNet using cropped image patch around the tumour with EMR features concatenated before multi-task prediction layer. & 0.780 [0.733--0.824] & 0.353 [0.290--0.440] & 0.781 [0.740--0.819] \\
+    4 &                              Two-stream 3D DenseNet with multi-task prediction layer using cropped patch around the tumour and additional downsampled context patch. & 0.766 [0.718--0.811] & 0.311 [0.260--0.391] & 0.748 [0.703--0.790] \\
+    5 &  Co-Attention Mechanism over features extracted from CT Imaging (wiht a 3D DenseNet) and EMR Data (with Deep MLP and final embedding codification). Final MTLR head. & 0.761 [0.713--0.808] & 0.340 [0.278--0.435] & 0.765 [0.721--0.806] \\
+\bottomrule
+\end{tabular}
